@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMasterPage.master.cs" Inherits="LoginMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 81%;
+        }
+        .style2
+        {
+            height: 62px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" class="style1">
+            <tr>
+                <td class="style2" style="text-align: center">
+                    <asp:Image ID="Image1" runat="server" Height="66px" 
+                        ImageUrl="~/images/logo1.png" Width="230px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="border: thin ridge #666633; background-image: url('/E%20Car%20Parking%20Booking/background/ltgraydk.gif'); font-weight: 700; font-size: small; color: #333300; font-family: 'Microsoft Sans Serif';">
+                  <marquee direction="right"> E-CAR PARK RESERVATION</marquee> </td>
+            </tr>
+            <tr>
+                <td style="border: thin ridge #666633">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                        StaticSubMenuIndent="16px">
+                        <Items>
+                            <asp:MenuItem Text="Reserve Parking" Value="Reserve Parking" 
+                                NavigateUrl="~/CustomerReserveParkingSlot.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="New User" Value="New User" NavigateUrl="~/NewUser.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/AboutUs.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact Us" Value="Contact Us" 
+                                NavigateUrl="~/Contactus.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Sign In" Value="Sign In" NavigateUrl="~/SignIn.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#333300" BorderStyle="Outset" Font-Bold="True" 
+                            ForeColor="Silver" />
+                        <StaticMenuItemStyle BackColor="#CCCCCC" BorderStyle="Ridge" Font-Bold="True" 
+                            ForeColor="#333333" HorizontalPadding="35px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: thin ridge #666633; background-image: url('/E%20Car%20Parking%20Booking/background/ltgraydk.gif'); font-size: small;">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td style="border: thin ridge #666633">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: thin ridge #666633; background-image: url('/E%20Car%20Parking%20Booking/background/ltgraydk.gif'); font-size: small; font-weight: 700; color: #333300; text-align: center;">
+                    Copy Right @ Sadhana Degree College</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

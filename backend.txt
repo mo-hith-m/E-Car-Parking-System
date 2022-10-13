@@ -1,0 +1,22 @@
+create table Reservation(ReservationID int,Vehicle_No varchar(15),Customer_Name varchar(25),MobileNo varchar(12),Parking_City varchar(100),Parking_Area varchar(100),Parking_Area_Code int,Charge_Per_Day float,Parking_Slot_No varchar(15),DateOfBooking varchar(25),From_Date date,To_Date date,Total_Days int);
+create table FreedReservation(ReservationID int,Vehicle_No varchar(15),Customer_Name varchar(25),MobileNo varchar(12),Parking_City varchar(100),Parking_Area varchar(100),Parking_Area_Code int,Charge_Per_Day float,Parking_Slot_No varchar(15),DateOfBooking varchar(25),From_Date date,To_Date date,Total_Days int);
+create table Register(Name varchar(50),Username varchar(50),UserType varchar(50),MobileNo varchar(20),Email_Id varchar(100),DateOfRegister varchar(50));
+
+
+create table Parking(ParkingAreaCode int,City varchar(100),Area varchar(200),Address varchar(300),No_Of_Parking_Slots int,Tablename varchar(200));
+
+
+create table Bengaluru(Area varchar(200));
+insert into Bengaluru values('Jayanagar');
+insert into Bengaluru values('Vijayanagar');
+insert into Bengaluru values('Koramangal');
+insert into Bengaluru values('Electronic City');
+insert into Bengaluru values('Indira Nagar');
+insert into Bengaluru values('Rajaji Nagar');
+insert into Bengaluru values('Kengeri');
+
+create table Register(Name varchar(50),Username varchar(50),UserType varchar(50),MobileNo varchar(20),Email_Id varchar(100),DateOfRegister varchar(50));
+
+create table Login(Username varchar(50),Password varchar(50),Type varchar(50));
+insert into Login values('admin','admin123','Admin');
+insert into Login values('user1','user123','User');
